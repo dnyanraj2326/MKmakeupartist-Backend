@@ -33,7 +33,7 @@ app.post('/api/contact', (req, res) => {
   const newContact = new Contact({ name,city,mobileNum,email,selectedServices,desc });
 
   newContact.save()
-    .then(() => res.status(500).json({
+    .then(() => res.status(200).json({
       res: {
         code: 200,
         status: "success"
