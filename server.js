@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 
 mongoose.connect('mongodb+srv://mkmakeupartist:MKmakeupartist%40123@mkclustor.uvgeo8x.mongodb.net/mkdatabase?retryWrites=true&w=majority', {
